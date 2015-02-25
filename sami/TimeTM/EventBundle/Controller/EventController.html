@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>TimeTM\EventBundle\Controller\EventController | TimeTM</title>
+    <title>TimeTM\EventBundle\Controller\EventController | TimeTM developers documentation</title>
 
             <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
@@ -42,7 +42,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../../../index.html">TimeTM</a>
+                <a class="navbar-brand" href="../../../index.html">TimeTM developers documentation</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
                 <ul class="nav navbar-nav">
@@ -126,7 +126,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_showAction">showAction</a>($id)
+                    <a href="#method_showAction">showAction</a>(integer $id)
                                             <p>Finds and displays a Event entity.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
@@ -135,7 +135,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_editAction">editAction</a>($id)
+                    <a href="#method_editAction">editAction</a>(integer $id)
                                             <p>Displays a form to edit an existing Event entity.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
@@ -153,7 +153,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_updateAction">updateAction</a>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, $id)
+                    <a href="#method_updateAction">updateAction</a>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, integer $id)
                                             <p>Edits an existing Event entity.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
@@ -162,7 +162,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_deleteAction">deleteAction</a>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, $id)
+                    <a href="#method_deleteAction">deleteAction</a>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, integer $id)
                                             <p>Deletes a Event entity.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
@@ -171,7 +171,7 @@
                     <abbr title="Symfony\Component\Form\Form">Form</abbr>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_createDeleteForm">createDeleteForm</a>(mixed $id)
+                    <a href="#method_createDeleteForm">createDeleteForm</a>(integer $id)
                                             <p>Creates a form to delete a Event entity by id.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
@@ -183,7 +183,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_indexAction">
-        <div class="location">at line 28</div>
+        <div class="location">at line 37</div>
         <code>                    
     <strong>indexAction</strong>()</code>
     </h3>
@@ -200,7 +200,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_createAction">
-        <div class="location">at line 45</div>
+        <div class="location">at line 56</div>
         <code>                    
     <strong>createAction</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request)</code>
     </h3>
@@ -228,7 +228,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_createCreateForm">
-        <div class="location">at line 72</div>
+        <div class="location">at line 83</div>
         <code>                private    <abbr title="Symfony\Component\Form\Form">Form</abbr>
     <strong>createCreateForm</strong>(<a href="../../../TimeTM/EventBundle/Entity/Event.html"><abbr title="TimeTM\EventBundle\Entity\Event">Event</abbr></a> $entity)</code>
     </h3>
@@ -242,7 +242,8 @@
                     <tr>
                 <td><a href="../../../TimeTM/EventBundle/Entity/Event.html"><abbr title="TimeTM\EventBundle\Entity\Event">Event</abbr></a></td>
                 <td>$entity</td>
-                <td>The entity</td>
+                <td>
+</td>
             </tr>
             </table>
 
@@ -264,7 +265,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_newAction">
-        <div class="location">at line 91</div>
+        <div class="location">at line 102</div>
         <code>                    
     <strong>newAction</strong>()</code>
     </h3>
@@ -281,9 +282,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_showAction">
-        <div class="location">at line 109</div>
+        <div class="location">at line 122</div>
         <code>                    
-    <strong>showAction</strong>($id)</code>
+    <strong>showAction</strong>(integer $id)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -293,7 +294,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
+                <td>integer</td>
                 <td>$id</td>
                 <td>
 </td>
@@ -309,9 +310,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_editAction">
-        <div class="location">at line 134</div>
+        <div class="location">at line 149</div>
         <code>                    
-    <strong>editAction</strong>($id)</code>
+    <strong>editAction</strong>(integer $id)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -321,7 +322,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
+                <td>integer</td>
                 <td>$id</td>
                 <td>
 </td>
@@ -337,7 +338,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_createEditForm">
-        <div class="location">at line 161</div>
+        <div class="location">at line 176</div>
         <code>                private    <abbr title="Symfony\Component\Form\Form">Form</abbr>
     <strong>createEditForm</strong>(<a href="../../../TimeTM/EventBundle/Entity/Event.html"><abbr title="TimeTM\EventBundle\Entity\Event">Event</abbr></a> $entity)</code>
     </h3>
@@ -373,9 +374,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_updateAction">
-        <div class="location">at line 179</div>
+        <div class="location">at line 197</div>
         <code>                    
-    <strong>updateAction</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, $id)</code>
+    <strong>updateAction</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, integer $id)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -391,7 +392,7 @@
 </td>
             </tr>
                     <tr>
-                <td></td>
+                <td>integer</td>
                 <td>$id</td>
                 <td>
 </td>
@@ -407,9 +408,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_deleteAction">
-        <div class="location">at line 211</div>
+        <div class="location">at line 232</div>
         <code>                    
-    <strong>deleteAction</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, $id)</code>
+    <strong>deleteAction</strong>(<abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr> $request, integer $id)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -425,7 +426,7 @@
 </td>
             </tr>
                     <tr>
-                <td></td>
+                <td>integer</td>
                 <td>$id</td>
                 <td>
 </td>
@@ -441,9 +442,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_createDeleteForm">
-        <div class="location">at line 238</div>
+        <div class="location">at line 259</div>
         <code>                private    <abbr title="Symfony\Component\Form\Form">Form</abbr>
-    <strong>createDeleteForm</strong>(mixed $id)</code>
+    <strong>createDeleteForm</strong>(integer $id)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -453,9 +454,10 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>mixed</td>
+                <td>integer</td>
                 <td>$id</td>
-                <td>The entity id</td>
+                <td>
+</td>
             </tr>
             </table>
 
