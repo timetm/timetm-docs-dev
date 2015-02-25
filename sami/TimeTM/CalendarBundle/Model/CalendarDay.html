@@ -1,0 +1,1487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>TimeTM\CalendarBundle\Model\CalendarDay | TimeTM</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+    
+    
+    </head>
+
+    <body id="class" data-name="class:TimeTM_CalendarBundle_Model_CalendarDay" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">TimeTM</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../TimeTM.html">TimeTM</a></li>
+                                        <li><a href="../../../TimeTM/CalendarBundle.html">CalendarBundle</a></li>
+                                        <li><a href="../../../TimeTM/CalendarBundle/Model.html">Model</a></li>
+    
+                <li>CalendarDay</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>CalendarDay</h1>
+    </div>
+
+    <p>    class
+    <strong>CalendarDay</strong>        extends <a href="../../../TimeTM/CalendarBundle/Model/Calendar.html"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a></p>
+
+            <div class="description">
+            <p>class representing a daily calendar</p>                    </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_router">
+                                        protected                                        <abbr title="Symfony\Component\Routing\Router">Router</abbr>
+                </td>
+                <td>$router</td>
+                <td class="last">the router service</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_translator">
+                                        protected                                        <abbr title="Symfony\Component\Translation\Translator">Translator</abbr>
+                </td>
+                <td>$translator</td>
+                <td class="last">the translator service</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_year">
+                                                            private                    string
+                </td>
+                <td>$year</td>
+                <td class="last">the current year</td>
+                <td><small>from&nbsp;<a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#property_year"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_month">
+                                                            private                    string
+                </td>
+                <td>$month</td>
+                <td class="last">the current month</td>
+                <td><small>from&nbsp;<a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#property_month"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_monthName">
+                                                            private                    string
+                </td>
+                <td>$monthName</td>
+                <td class="last">monthName</td>
+                <td><small>from&nbsp;<a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#property_monthName"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_weekno">
+                                                            private                    string
+                </td>
+                <td>$weekno</td>
+                <td class="last">the week number</td>
+                <td><small>from&nbsp;<a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#property_weekno"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_options">
+                                                            private                    array
+                </td>
+                <td>$options</td>
+                <td class="last">options</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mode">
+                                                            private                    string
+                </td>
+                <td>$mode</td>
+                <td class="last">mode</td>
+                <td><small>from&nbsp;<a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#property_mode"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_view">
+                                                            private                    string
+                </td>
+                <td>$view</td>
+                <td class="last">view</td>
+                <td><small>from&nbsp;<a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#property_view"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_prevMonthYear">
+                                                            private                    string
+                </td>
+                <td>$prevMonthYear</td>
+                <td class="last">prevMonthYear</td>
+                <td><small>from&nbsp;<a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#property_prevMonthYear"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_prevMonthMonth">
+                                                            private                    string
+                </td>
+                <td>$prevMonthMonth</td>
+                <td class="last">prevMonthMonth</td>
+                <td><small>from&nbsp;<a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#property_prevMonthMonth"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_nextMonthMonth">
+                                                            private                    string
+                </td>
+                <td>$nextMonthMonth</td>
+                <td class="last">nextMonthMonth</td>
+                <td><small>from&nbsp;<a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#property_nextMonthMonth"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_nextMonthYear">
+                                                            private                    string
+                </td>
+                <td>$nextMonthYear</td>
+                <td class="last">nextMonthYear</td>
+                <td><small>from&nbsp;<a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#property_nextMonthYear"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property__day">
+                                                            private                    string
+                </td>
+                <td>$_day</td>
+                <td class="last">day ( internal )</td>
+                <td><small>from&nbsp;<a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#property__day"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_day">
+                                                            private                    string
+                </td>
+                <td>$day</td>
+                <td class="last">the current day</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_prevMonthDay">
+                                                            private                    string
+                </td>
+                <td>$prevMonthDay</td>
+                <td class="last">prevMonthDay</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_nextMonthDay">
+                                                            private                    string
+                </td>
+                <td>$nextMonthDay</td>
+                <td class="last">nextMonthDay</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_yesterdayYear">
+                                                            private                    string
+                </td>
+                <td>$yesterdayYear</td>
+                <td class="last">yesterdayYear</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_yesterdayMonth">
+                                                            private                    string
+                </td>
+                <td>$yesterdayMonth</td>
+                <td class="last">yesterdayMonth</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_yesterdayDay">
+                                                            private                    string
+                </td>
+                <td>$yesterdayDay</td>
+                <td class="last">yesterdayDay</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_tomorrowYear">
+                                                            private                    string
+                </td>
+                <td>$tomorrowYear</td>
+                <td class="last">tomorrowYear</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_tomorrowMonth">
+                                                            private                    string
+                </td>
+                <td>$tomorrowMonth</td>
+                <td class="last">tomorrowMonth</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_tomorrowDay">
+                                                            private                    string
+                </td>
+                <td>$tomorrowDay</td>
+                <td class="last">tomorrowDay</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_dayName">
+                                                            private                    string
+                </td>
+                <td>$dayName</td>
+                <td class="last">dayName</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<abbr title="Symfony\Component\Routing\Router">Router</abbr> $router, <abbr title="Symfony\Component\Translation\Translator">Translator</abbr> $translator)
+                                            <p>Constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_init">init</a>(array $options = array())
+                                            <p>initialize the calendar.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#method_init"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getYear">getYear</a>()
+                                            <p>Get year</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#method_getYear"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMonthName">getMonthName</a>()
+                                            <p>Get monthName</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#method_getMonthName"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPrevYearUrl">getPrevYearUrl</a>(string $mode)
+                                            <p>Get PrevYearUrl</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#method_getPrevYearUrl"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPrevMonthUrl">getPrevMonthUrl</a>(string $mode)
+                                            <p>Get PrevMonthUrl</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#method_getPrevMonthUrl"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getNextMonthUrl">getNextMonthUrl</a>(string $mode)
+                                            <p>Get NextMonthUrl</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#method_getNextMonthUrl"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getNextYearUrl">getNextYearUrl</a>(string $mode)
+                                            <p>Get NextYearUrl</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#method_getNextYearUrl"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDayUrl">getDayUrl</a>(string $_day = null)
+                                            <p>Get DayUrl</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#method_getDayUrl"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getModeChangeUrl">getModeChangeUrl</a>(string $view)
+                                            <p>Get ModeChangeUrl</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#method_getModeChangeUrl"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMonthCalendarDates">getMonthCalendarDates</a>(string $view)
+                                            <p>get the dates to display for a monthly view</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#method_getMonthCalendarDates"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setYear">setYear</a>(string $year)
+                                            <p>Set year</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#method_setYear"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setMonth">setMonth</a>(string $month)
+                                            <p>Set month</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#method_setMonth"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setMonthName">setMonthName</a>()
+                                            <p>Set monthName</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#method_setMonthName"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setWeekno">setWeekno</a>(string $weekno)
+                                            <p>Set weekno</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#method_setWeekno"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getWeekno">getWeekno</a>()
+                                            <p>Get weekno</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#method_getWeekno"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAdditionnalNavigationParameters">setAdditionnalNavigationParameters</a>()
+                                            <p>Set additionnal panel navigation parameters.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_childInit">childInit</a>(array $options = array())
+                                            <p>Set additionnal panel navigation parameters.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMonth">getMonth</a>()
+                                            <p>Get month</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#method_getMonth"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setPanelNavigationParameters">setPanelNavigationParameters</a>()
+                                            <p>Set panel navigation parameters.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#method_setPanelNavigationParameters"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getYesterdayUrl">getYesterdayUrl</a>()
+                                            <p>Get YesterdayUrl</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTomorrowUrl">getTomorrowUrl</a>()
+                                            <p>Get YesterdayUrl</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDay">getDay</a>()
+                                            <p>Get day</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDayName">getDayName</a>()
+                                            <p>Get dayName</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPrevMonthDay">getPrevMonthDay</a>()
+                                            <p>Get prevMonthDay</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getNextMonthDay">getNextMonthDay</a>()
+                                            <p>Get nextMonthDay</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCurrentDayStamp">getCurrentDayStamp</a>()
+                                            <p>Get day stamp</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDay">setDay</a>(string $day)
+                                            <p>Set day</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDayName">setDayName</a>()
+                                            <p>Set dayName</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setPrevMonthDay">setPrevMonthDay</a>()
+                                            <p>Set prevMonthDay</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setNextMonthDay">setNextMonthDay</a>()
+                                            <p>Set NextMonthDay</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 130</div>
+        <code>                    
+    <strong>__construct</strong>(<abbr title="Symfony\Component\Routing\Router">Router</abbr> $router, <abbr title="Symfony\Component\Translation\Translator">Translator</abbr> $translator)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Constructor.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Symfony\Component\Routing\Router">Router</abbr></td>
+                <td>$router</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Symfony\Component\Translation\Translator">Translator</abbr></td>
+                <td>$translator</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_init">
+        <div class="location">in <a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#method_init"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a> at line 156</div>
+        <code>                    
+    <strong>init</strong>(array $options = array())</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>initialize the calendar.</p>                    <p>set :</p>
+
+<ul>
+<li>year</li>
+</ul>
+
+<p>exec :</p>
+
+<ul>
+<li>childInit()</li>
+<li>setPanelNavigationParameters()</li>
+</ul>
+</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getYear">
+        <div class="location">in <a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#method_getYear"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a> at line 170</div>
+        <code>                    string
+    <strong>getYear</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get year</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMonthName">
+        <div class="location">in <a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#method_getMonthName"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a> at line 180</div>
+        <code>                    string
+    <strong>getMonthName</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get monthName</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPrevYearUrl">
+        <div class="location">in <a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#method_getPrevYearUrl"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a> at line 192</div>
+        <code>                    string
+    <strong>getPrevYearUrl</strong>(string $mode)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get PrevYearUrl</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$mode</td>
+                <td>Values : month, week, day</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>$url</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPrevMonthUrl">
+        <div class="location">in <a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#method_getPrevMonthUrl"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a> at line 225</div>
+        <code>                    string
+    <strong>getPrevMonthUrl</strong>(string $mode)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get PrevMonthUrl</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$mode</td>
+                <td>Values : month, day</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>$url</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getNextMonthUrl">
+        <div class="location">in <a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#method_getNextMonthUrl"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a> at line 252</div>
+        <code>                    string
+    <strong>getNextMonthUrl</strong>(string $mode)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get NextMonthUrl</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$mode</td>
+                <td>Values : month, day</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>$url</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getNextYearUrl">
+        <div class="location">in <a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#method_getNextYearUrl"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a> at line 279</div>
+        <code>                    string
+    <strong>getNextYearUrl</strong>(string $mode)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get NextYearUrl</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$mode</td>
+                <td>Values : month, week, day</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>$url</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDayUrl">
+        <div class="location">in <a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#method_getDayUrl"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a> at line 312</div>
+        <code>                    string
+    <strong>getDayUrl</strong>(string $_day = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get DayUrl</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$_day</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>$url</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getModeChangeUrl">
+        <div class="location">in <a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#method_getModeChangeUrl"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a> at line 340</div>
+        <code>                    string
+    <strong>getModeChangeUrl</strong>(string $view)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get ModeChangeUrl</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$view</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>$url</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMonthCalendarDates">
+        <div class="location">in <a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#method_getMonthCalendarDates"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a> at line 369</div>
+        <code>                    array
+    <strong>getMonthCalendarDates</strong>(string $view)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>get the dates to display for a monthly view</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$view</td>
+                <td>The view displayed : Month, Day, Week</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>$monthDates    A list of dates</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setYear">
+        <div class="location">in <a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#method_setYear"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a> at line 425</div>
+        <code>            protected        
+    <strong>setYear</strong>(string $year)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set year</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$year</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMonth">
+        <div class="location">in <a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#method_setMonth"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a> at line 436</div>
+        <code>            protected        
+    <strong>setMonth</strong>(string $month)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set month</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$month</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMonthName">
+        <div class="location">in <a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#method_setMonthName"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a> at line 449</div>
+        <code>            protected        
+    <strong>setMonthName</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set monthName</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setWeekno">
+        <div class="location">in <a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#method_setWeekno"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a> at line 459</div>
+        <code>            protected        
+    <strong>setWeekno</strong>(string $weekno)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set weekno</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$weekno</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getWeekno">
+        <div class="location">in <a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#method_getWeekno"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a> at line 473</div>
+        <code>            protected        string
+    <strong>getWeekno</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get weekno</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAdditionnalNavigationParameters">
+        <div class="location">at line 147</div>
+        <code>                    
+    <strong>setAdditionnalNavigationParameters</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set additionnal panel navigation parameters.</p>                    <p>add the following properties</p>
+
+<ul>
+<li>yesterdayDay.</li>
+<li>yesterdayMonth.</li>
+<li>yesterdayYear</li>
+<li>tomorrowDay.</li>
+<li>tomorrowMonth.</li>
+<li>tomorrowYear</li>
+</ul>
+</p>            </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_childInit">
+        <div class="location">at line 263</div>
+        <code>            protected        
+    <strong>childInit</strong>(array $options = array())</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set additionnal panel navigation parameters.</p>                    <p>set :</p>
+
+<ul>
+<li>month</li>
+<li>monthName</li>
+<li>day</li>
+<li>dayName</li>
+<li>prevMonthDay</li>
+<li>NextMonthDay</li>
+</ul>
+
+<p>extends Calender::init</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>Calender::init()</td>
+                <td>       The extended function</td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMonth">
+        <div class="location">in <a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#method_getMonth"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a> at line 505</div>
+        <code>            protected        string
+    <strong>getMonth</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get month</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPanelNavigationParameters">
+        <div class="location">in <a href="../../../TimeTM/CalendarBundle/Model/Calendar.html#method_setPanelNavigationParameters"><abbr title="TimeTM\CalendarBundle\Model\Calendar">Calendar</abbr></a> at line 524</div>
+        <code>                private    
+    <strong>setPanelNavigationParameters</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set panel navigation parameters.</p>                    <p>add the following properties</p>
+
+<ul>
+<li>prevMonthYear.</li>
+<li>prevMonthMonth.</li>
+<li>nextMonthMonth.</li>
+<li>nextMonthYear.</li>
+</ul>
+</p>            </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getYesterdayUrl">
+        <div class="location">at line 164</div>
+        <code>                    string
+    <strong>getYesterdayUrl</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get YesterdayUrl</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTomorrowUrl">
+        <div class="location">at line 179</div>
+        <code>                    string
+    <strong>getTomorrowUrl</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get YesterdayUrl</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDay">
+        <div class="location">at line 194</div>
+        <code>                    string
+    <strong>getDay</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get day</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDayName">
+        <div class="location">at line 204</div>
+        <code>                    string
+    <strong>getDayName</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get dayName</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPrevMonthDay">
+        <div class="location">at line 214</div>
+        <code>                    string
+    <strong>getPrevMonthDay</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get prevMonthDay</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getNextMonthDay">
+        <div class="location">at line 224</div>
+        <code>                    string
+    <strong>getNextMonthDay</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get nextMonthDay</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCurrentDayStamp">
+        <div class="location">at line 234</div>
+        <code>                    string
+    <strong>getCurrentDayStamp</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get day stamp</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDay">
+        <div class="location">at line 285</div>
+        <code>                private    
+    <strong>setDay</strong>(string $day)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set day</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$day</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDayName">
+        <div class="location">at line 297</div>
+        <code>                private    
+    <strong>setDayName</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set dayName</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPrevMonthDay">
+        <div class="location">at line 305</div>
+        <code>                private    
+    <strong>setPrevMonthDay</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set prevMonthDay</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setNextMonthDay">
+        <div class="location">at line 320</div>
+        <code>                private    
+    <strong>setNextMonthDay</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set NextMonthDay</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
