@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>TimeTM\CoreBundle\Entity\Event | TimeTM developers documentation</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+    
+    
+    </head>
+
+    <body id="class" data-name="class:TimeTM_CoreBundle_Entity_Event" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">TimeTM developers documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../TimeTM.html">TimeTM</a></li>
+                                        <li><a href="../../../TimeTM/CoreBundle.html">CoreBundle</a></li>
+                                        <li><a href="../../../TimeTM/CoreBundle/Entity.html">Entity</a></li>
+    
+                <li>Event</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>Event</h1>
+    </div>
+
+    <p>    class
+    <strong>Event</strong></p>
+
+            <div class="description">
+            <p>Class representing an Event</p>                    </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_id">
+                                                            private                    integer
+                </td>
+                <td>$id</td>
+                <td class="last">id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_agenda">
+                                                            private                    <abbr title="TimeTM\CoreBundle\Entity\TimeTM\AgendaBundle\Entity\Agenda">Agenda</abbr>
+                </td>
+                <td>$agenda</td>
+                <td class="last">Agenda containing the event</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_title">
+                                                            private                    string
+                </td>
+                <td>$title</td>
+                <td class="last">title</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_place">
+                                                            private                    string
+                </td>
+                <td>$place</td>
+                <td class="last">place</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_description">
+                                                            private                    <abbr title="TimeTM\CoreBundle\Entity\text">text</abbr>
+                </td>
+                <td>$description</td>
+                <td class="last">description</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_startdate">
+                                                            private                    <a href="http://php.net/DateTime"><abbr title="DateTime">DateTime</abbr></a>
+                </td>
+                <td>$startdate</td>
+                <td class="last">startdate</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_starttime">
+                                                            private                    <a href="http://php.net/DateTime"><abbr title="DateTime">DateTime</abbr></a>
+                </td>
+                <td>$starttime</td>
+                <td class="last">starttime</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_enddate">
+                                                            private                    <a href="http://php.net/DateTime"><abbr title="DateTime">DateTime</abbr></a>
+                </td>
+                <td>$enddate</td>
+                <td class="last">enddate</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_endtime">
+                                                            private                    <a href="http://php.net/DateTime"><abbr title="DateTime">DateTime</abbr></a>
+                </td>
+                <td>$endtime</td>
+                <td class="last">endtime</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_fullday">
+                                                            private                    boolean
+                </td>
+                <td>$fullday</td>
+                <td class="last">fullday</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_participants">
+                                                            private                    
+                </td>
+                <td>$participants</td>
+                <td class="last">participants at the event</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>()
+                                            <p>Constructor</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    integer
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getId">getId</a>()
+                                            <p>Get id</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../TimeTM/CoreBundle/Entity/Event.html"><abbr title="TimeTM\CoreBundle\Entity\Event">Event</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTitle">setTitle</a>(string $title)
+                                            <p>Set title</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTitle">getTitle</a>()
+                                            <p>Get title</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../TimeTM/CoreBundle/Entity/Event.html"><abbr title="TimeTM\CoreBundle\Entity\Event">Event</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setPlace">setPlace</a>(string $place)
+                                            <p>Set place</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPlace">getPlace</a>()
+                                            <p>Get place</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../TimeTM/CoreBundle/Entity/Event.html"><abbr title="TimeTM\CoreBundle\Entity\Event">Event</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDescription">setDescription</a>(string $description)
+                                            <p>Set description</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDescription">getDescription</a>()
+                                            <p>Get description</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../TimeTM/CoreBundle/Entity/Event.html"><abbr title="TimeTM\CoreBundle\Entity\Event">Event</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setStartdate">setStartdate</a>(<a href="http://php.net/DateTime"><abbr title="DateTime">DateTime</abbr></a> $startdate)
+                                            <p>Set startdate</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="http://php.net/DateTime"><abbr title="DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getStartdate">getStartdate</a>()
+                                            <p>Get startdate</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../TimeTM/CoreBundle/Entity/Event.html"><abbr title="TimeTM\CoreBundle\Entity\Event">Event</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setEnddate">setEnddate</a>(<a href="http://php.net/DateTime"><abbr title="DateTime">DateTime</abbr></a> $enddate)
+                                            <p>Set enddate</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="http://php.net/DateTime"><abbr title="DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getEnddate">getEnddate</a>()
+                                            <p>Get enddate</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../TimeTM/CoreBundle/Entity/Event.html"><abbr title="TimeTM\CoreBundle\Entity\Event">Event</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setFullday">setFullday</a>(string $fullday)
+                                            <p>Set fullday</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFullday">getFullday</a>()
+                                            <p>Get fullday</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../TimeTM/CoreBundle/Entity/Event.html"><abbr title="TimeTM\CoreBundle\Entity\Event">Event</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAgenda">setAgenda</a>(<abbr title="TimeTM\CoreBundle\Entity\TimeTM\CoreBundle\Entity\Agenda">Agenda</abbr> $agenda = null)
+                                            <p>Set agenda</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../TimeTM/CoreBundle/Entity/Agenda.html"><abbr title="TimeTM\CoreBundle\Entity\Agenda">Agenda</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAgenda">getAgenda</a>()
+                                            <p>Get agenda</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../TimeTM/CoreBundle/Entity/Event.html"><abbr title="TimeTM\CoreBundle\Entity\Event">Event</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addParticipant">addParticipant</a>(<abbr title="TimeTM\CoreBundle\Entity\TimeTM\CoreBundle\Entity\Contact">Contact</abbr> $participants = null)
+                                            <p>Add participants</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeParticipant">removeParticipant</a>(<abbr title="TimeTM\CoreBundle\Entity\TimeTM\CoreBundle\Entity\Contact">Contact</abbr> $participants)
+                                            <p>Remove participants</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Doctrine\Common\Collections\Collection">Collection</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getParticipants">getParticipants</a>()
+                                            <p>Get participants</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../TimeTM/CoreBundle/Entity/Event.html"><abbr title="TimeTM\CoreBundle\Entity\Event">Event</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setStarttime">setStarttime</a>(<a href="http://php.net/DateTime"><abbr title="DateTime">DateTime</abbr></a> $starttime)
+                                            <p>Set starttime</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="http://php.net/DateTime"><abbr title="DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getStarttime">getStarttime</a>()
+                                            <p>Get starttime</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../TimeTM/CoreBundle/Entity/Event.html"><abbr title="TimeTM\CoreBundle\Entity\Event">Event</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setEndtime">setEndtime</a>(<a href="http://php.net/DateTime"><abbr title="DateTime">DateTime</abbr></a> $endtime)
+                                            <p>Set endtime</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="http://php.net/DateTime"><abbr title="DateTime">DateTime</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getEndtime">getEndtime</a>()
+                                            <p>Get endtime</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 142</div>
+        <code>                    
+    <strong>__construct</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Constructor</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getId">
+        <div class="location">at line 152</div>
+        <code>                    integer
+    <strong>getId</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get id</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>integer</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTitle">
+        <div class="location">at line 163</div>
+        <code>                    <a href="../../../TimeTM/CoreBundle/Entity/Event.html"><abbr title="TimeTM\CoreBundle\Entity\Event">Event</abbr></a>
+    <strong>setTitle</strong>(string $title)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set title</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$title</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../TimeTM/CoreBundle/Entity/Event.html"><abbr title="TimeTM\CoreBundle\Entity\Event">Event</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTitle">
+        <div class="location">at line 175</div>
+        <code>                    string
+    <strong>getTitle</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get title</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPlace">
+        <div class="location">at line 186</div>
+        <code>                    <a href="../../../TimeTM/CoreBundle/Entity/Event.html"><abbr title="TimeTM\CoreBundle\Entity\Event">Event</abbr></a>
+    <strong>setPlace</strong>(string $place)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set place</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$place</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../TimeTM/CoreBundle/Entity/Event.html"><abbr title="TimeTM\CoreBundle\Entity\Event">Event</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPlace">
+        <div class="location">at line 198</div>
+        <code>                    string
+    <strong>getPlace</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get place</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDescription">
+        <div class="location">at line 209</div>
+        <code>                    <a href="../../../TimeTM/CoreBundle/Entity/Event.html"><abbr title="TimeTM\CoreBundle\Entity\Event">Event</abbr></a>
+    <strong>setDescription</strong>(string $description)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set description</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$description</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../TimeTM/CoreBundle/Entity/Event.html"><abbr title="TimeTM\CoreBundle\Entity\Event">Event</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDescription">
+        <div class="location">at line 221</div>
+        <code>                    string
+    <strong>getDescription</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get description</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setStartdate">
+        <div class="location">at line 232</div>
+        <code>                    <a href="../../../TimeTM/CoreBundle/Entity/Event.html"><abbr title="TimeTM\CoreBundle\Entity\Event">Event</abbr></a>
+    <strong>setStartdate</strong>(<a href="http://php.net/DateTime"><abbr title="DateTime">DateTime</abbr></a> $startdate)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set startdate</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="http://php.net/DateTime"><abbr title="DateTime">DateTime</abbr></a></td>
+                <td>$startdate</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../TimeTM/CoreBundle/Entity/Event.html"><abbr title="TimeTM\CoreBundle\Entity\Event">Event</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStartdate">
+        <div class="location">at line 244</div>
+        <code>                    <a href="http://php.net/DateTime"><abbr title="DateTime">DateTime</abbr></a>
+    <strong>getStartdate</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get startdate</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="http://php.net/DateTime"><abbr title="DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setEnddate">
+        <div class="location">at line 255</div>
+        <code>                    <a href="../../../TimeTM/CoreBundle/Entity/Event.html"><abbr title="TimeTM\CoreBundle\Entity\Event">Event</abbr></a>
+    <strong>setEnddate</strong>(<a href="http://php.net/DateTime"><abbr title="DateTime">DateTime</abbr></a> $enddate)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set enddate</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="http://php.net/DateTime"><abbr title="DateTime">DateTime</abbr></a></td>
+                <td>$enddate</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../TimeTM/CoreBundle/Entity/Event.html"><abbr title="TimeTM\CoreBundle\Entity\Event">Event</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEnddate">
+        <div class="location">at line 267</div>
+        <code>                    <a href="http://php.net/DateTime"><abbr title="DateTime">DateTime</abbr></a>
+    <strong>getEnddate</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get enddate</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="http://php.net/DateTime"><abbr title="DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setFullday">
+        <div class="location">at line 278</div>
+        <code>                    <a href="../../../TimeTM/CoreBundle/Entity/Event.html"><abbr title="TimeTM\CoreBundle\Entity\Event">Event</abbr></a>
+    <strong>setFullday</strong>(string $fullday)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set fullday</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$fullday</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../TimeTM/CoreBundle/Entity/Event.html"><abbr title="TimeTM\CoreBundle\Entity\Event">Event</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFullday">
+        <div class="location">at line 290</div>
+        <code>                    string
+    <strong>getFullday</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get fullday</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAgenda">
+        <div class="location">at line 301</div>
+        <code>                    <a href="../../../TimeTM/CoreBundle/Entity/Event.html"><abbr title="TimeTM\CoreBundle\Entity\Event">Event</abbr></a>
+    <strong>setAgenda</strong>(<abbr title="TimeTM\CoreBundle\Entity\TimeTM\CoreBundle\Entity\Agenda">Agenda</abbr> $agenda = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set agenda</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="TimeTM\CoreBundle\Entity\TimeTM\CoreBundle\Entity\Agenda">Agenda</abbr></td>
+                <td>$agenda</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../TimeTM/CoreBundle/Entity/Event.html"><abbr title="TimeTM\CoreBundle\Entity\Event">Event</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAgenda">
+        <div class="location">at line 313</div>
+        <code>                    <a href="../../../TimeTM/CoreBundle/Entity/Agenda.html"><abbr title="TimeTM\CoreBundle\Entity\Agenda">Agenda</abbr></a>
+    <strong>getAgenda</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get agenda</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../TimeTM/CoreBundle/Entity/Agenda.html"><abbr title="TimeTM\CoreBundle\Entity\Agenda">Agenda</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addParticipant">
+        <div class="location">at line 324</div>
+        <code>                    <a href="../../../TimeTM/CoreBundle/Entity/Event.html"><abbr title="TimeTM\CoreBundle\Entity\Event">Event</abbr></a>
+    <strong>addParticipant</strong>(<abbr title="TimeTM\CoreBundle\Entity\TimeTM\CoreBundle\Entity\Contact">Contact</abbr> $participants = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add participants</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="TimeTM\CoreBundle\Entity\TimeTM\CoreBundle\Entity\Contact">Contact</abbr></td>
+                <td>$participants</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../TimeTM/CoreBundle/Entity/Event.html"><abbr title="TimeTM\CoreBundle\Entity\Event">Event</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeParticipant">
+        <div class="location">at line 336</div>
+        <code>                    
+    <strong>removeParticipant</strong>(<abbr title="TimeTM\CoreBundle\Entity\TimeTM\CoreBundle\Entity\Contact">Contact</abbr> $participants)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Remove participants</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="TimeTM\CoreBundle\Entity\TimeTM\CoreBundle\Entity\Contact">Contact</abbr></td>
+                <td>$participants</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getParticipants">
+        <div class="location">at line 346</div>
+        <code>                    <abbr title="Doctrine\Common\Collections\Collection">Collection</abbr>
+    <strong>getParticipants</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get participants</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Doctrine\Common\Collections\Collection">Collection</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setStarttime">
+        <div class="location">at line 357</div>
+        <code>                    <a href="../../../TimeTM/CoreBundle/Entity/Event.html"><abbr title="TimeTM\CoreBundle\Entity\Event">Event</abbr></a>
+    <strong>setStarttime</strong>(<a href="http://php.net/DateTime"><abbr title="DateTime">DateTime</abbr></a> $starttime)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set starttime</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="http://php.net/DateTime"><abbr title="DateTime">DateTime</abbr></a></td>
+                <td>$starttime</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../TimeTM/CoreBundle/Entity/Event.html"><abbr title="TimeTM\CoreBundle\Entity\Event">Event</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStarttime">
+        <div class="location">at line 369</div>
+        <code>                    <a href="http://php.net/DateTime"><abbr title="DateTime">DateTime</abbr></a>
+    <strong>getStarttime</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get starttime</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="http://php.net/DateTime"><abbr title="DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setEndtime">
+        <div class="location">at line 380</div>
+        <code>                    <a href="../../../TimeTM/CoreBundle/Entity/Event.html"><abbr title="TimeTM\CoreBundle\Entity\Event">Event</abbr></a>
+    <strong>setEndtime</strong>(<a href="http://php.net/DateTime"><abbr title="DateTime">DateTime</abbr></a> $endtime)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set endtime</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="http://php.net/DateTime"><abbr title="DateTime">DateTime</abbr></a></td>
+                <td>$endtime</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../TimeTM/CoreBundle/Entity/Event.html"><abbr title="TimeTM\CoreBundle\Entity\Event">Event</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEndtime">
+        <div class="location">at line 392</div>
+        <code>                    <a href="http://php.net/DateTime"><abbr title="DateTime">DateTime</abbr></a>
+    <strong>getEndtime</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get endtime</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="http://php.net/DateTime"><abbr title="DateTime">DateTime</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
